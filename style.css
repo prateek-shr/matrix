@@ -1,0 +1,143 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+h1{
+    font-weight: bolder;
+    font-size:3rem;
+}
+
+body{
+    color:white;
+    font-family:"Poppins",sans-serif;
+    min-height: 100vh;
+}
+
+.b1{
+    background-image: linear-gradient(120deg,#ff8121,#e22b17);
+}
+
+.b2{
+    background-image: linear-gradient(120deg,#0ccaf5,#1725e2);
+}
+
+.b3{
+    background-image: linear-gradient(120deg,#f7d138,#e97c08);
+}
+
+.b4{
+    background-image: linear-gradient(120deg,#19e129,#199e12);
+}
+
+header,form{
+    padding-top:1rem;
+    font-size:1rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,form button{
+    padding:0.5rem;
+    font-size:2rem;
+    max-width:80%;
+    border:none;
+    background:white;
+}
+
+form button{
+    color: black;
+    background:white;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+form button:hover{
+    background: black;
+    color:white;
+}
+
+.todo-container{
+    display:flex;
+    align-items: left;
+}
+
+.todo-list1{
+    padding: 0;
+    margin:auto;
+    min-width: 90%;
+    word-break: break-word;
+    list-style: none;
+}
+
+.todo-list2{
+    padding: 0;
+    margin:auto;
+    min-width: 90%;
+    word-break: break-word;
+    list-style: none;
+}
+
+.todo-list3{
+    padding: 0;
+    margin:auto;
+    min-width: 90%;
+    word-break: break-word;
+    list-style: none;
+}
+
+.todo-list4{
+    padding: 0;
+    margin:auto;
+    min-width: 90%;
+    word-break: break-word;
+    list-style: none;
+}
+
+.todo{
+    margin:0.5rem;
+    background: white;
+    color:black;
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex:1;
+}
+
+.trash-btn,.complete-btn{
+    background-color: black;
+    color:white;
+    border:none;
+    padding:1rem;
+    cursor: pointer;
+}
+
+.complete-btn{
+    background-color:white;
+    color:black;
+}
+
+.todo-item{
+    padding-left: 0.5rem;
+}
+
+.fa-trash,.fa-check{
+    pointer-events:none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform:translateY(8rem) rotateZ(20deg);
+    opacity:0;
+}
